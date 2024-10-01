@@ -1,0 +1,34 @@
+Requisitos
+Dependencias del proyecto
+Node.js
+Puppeteer
+AnyChart
+Express
+Stopword
+__________________________________________________
+
+Primero, clona el repositorio o descarga los archivos del proyecto, luego instala las dependencias:
+
+Cómo ejecutar el proyecto:
+
+1. Ejecutar el servidor
+Para iniciar el servidor usa el siguiente comando:
+
+bash npm start
+
+2. Ejecutar el scraper
+El scraper está configurado para procesar URLs de productos de Amazon.
+
+Ejemplo de uso con curl:
+
+bash curl "http://localhost:4000/scrape?url=https://www.amazon.com/gp/product/B0CXG3HMX1"
+
+3. Simular solicitudes
+El script simulateRequests.sh permite simular múltiples solicitudes de scraping a URLs de productos de Amazon.
+
+Para ejecutarlo:
+
+bash ./simulateRequests.sh localhost 4000 scrape 4
+
+4. Ver la Nube de Palabras
+Visita http://localhost:4000.
